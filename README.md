@@ -22,3 +22,8 @@
 
 ![use your brain](https://storage.googleapis.com/proudcity/elgl/uploads/2020/08/growth-mindset-brain.png)
 
+| reading     | link        |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
