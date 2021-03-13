@@ -1,29 +1,39 @@
-# reading-notes V2
+# Reading Notes 
 
-![V2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpbGBU2VhBZi4PEsIjc7GT4rRQrLqxu91EA&usqp=CAU)
+### Hello everyone , I am Ahmad , here in this website you can see some of my work journey in class 102,201 , it will be updated daily .
 
-
-
-### Growth Mindset its the first thing you must have to succes and you can develop this by challenge yourself to learn something new all the time 
-
-3 reminders to keep yourself in a growth mindset
-
-1. do or learn something you like 
-2. challenge yourself all the time 
-3. dont quit 
-
-### quotes
-
-
-**DON’T WAIT FOR SUCCESS**
-
-*EXPLORE. DREAM. DISCOVER.*
-
-
-![use your brain](https://storage.googleapis.com/proudcity/elgl/uploads/2020/08/growth-mindset-brain.png)
+#### reading notes 102
 
 | reading     | link        |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| class-1     | [link]()    |
+| class-2     | [link]()    |
+| class-3     | [link]()    |
+| class-4     | [link]()    |
+| class-5     | [link]()    |
+| class-6     | [link]()    |
+| class-7     | [link]()    |
+
+
+#### reading notes 201
+
+| reading     | link        |
+| ----------- | ----------- |
+| class-1     | [link]()    |
+| class-2     | [link]()    |
+| class-3     | [link]()    |
+| class-4     | [link]()    |
+| class-5     | [link]()    |
+| class-6     | [link]()    |
+| class-7     | [link]()    |
+| class-8     | [link]()    |
+| class-9     | [link]()    |
+| class-10    | [link]()    |
+| class-11    | [link]()    |
+| class-12    | [link]()    |
+| class-13    | [link]()    |
+| class-14    | [link]()    |
+| class-15    | [link]()    |
+
+
 
