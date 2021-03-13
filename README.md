@@ -6,7 +6,7 @@
 
 | reading     | link        |
 | ----------- | ----------- |
-| class-1     | [link]()    |
+| class-1     | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-102/CssColoe)    |
 | class-2     | [link]()    |
 | class-3     | [link]()    |
 | class-4     | [link]()    |
