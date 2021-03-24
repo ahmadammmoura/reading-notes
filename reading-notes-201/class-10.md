@@ -1,158 +1,129 @@
-# HTML Forms : 
+## Order of execution :
 
-**An HTML form is used to collect user input. The user input can then be sent to a server for processing.**
+Order of execution in JavaScript is dependent on the following components working together to pass and order information.
 
-![HTML forms](https://i2.wp.com/www.tutorialbrain.com/wp-content/uploads/2019/01/HTML-Form.jpg?fit=1920%2C1080&ssl=1)
+- The Callstack.
+- The Event Loop.
+- The Task Queue.
+- WebAPIs/External Resources.
 
-## The `<form>` Element
-**The HTML `<form>` element defines a form that is used to collect user input:**
+**We can think through the order of execution using the (sometimes headache inducing) example of the asynchronous fetch request.**
+
+**A very simple fetch request might look something like this :**
+
 ```
-<form>
-.
-form elements
-.
-</form>
-```
-### How does an HTML form work?
-
-**A web form has two parts: the HTML ‘front end’ and a back end form processor. The HTML front end part handles the presentation while the back end handles the form submissions (like saving the form submissions, sending emails etc). The back end form processor script is usually written in languages like PHP, ASP or Perl.**
-
-**The image below illustrates the concept:**
-
-![HTML form](http://javascript-coder.com/wp-content/uploads/2010/07/web-form-working1.png)
-
-1. A visitor visits a web page that contains a form.
-2. The web browser displays the HTML form.
-3. The visitor fills in the form and submits
-4. The browser sends the submitted form data to the web server
-5. A form processor script running on the web server processes the form data
-6. A response page is sent back to the browser.
-
-### The `<input>` Element :
-
-**The `<input>` element is the most important form element.The `<input>` element is displayed in several ways, depending on the type attribute.**
-
-### Text Fields "
-**`<input type="text">` defines a single-line input field for text input.**
-
-### The `<label>` Element :
-
-**Notice the use of the `<label>` element in the example above.**
-
-**The `<label>` tag defines a label for many form elements.**
-
-**The `<label>` element is useful for screen-reader users, because the screen-reader will read out loud the label when the user is focused on the input element.**
-
-**The `<label>` element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the `<label>` element, it toggles the radio button/checkbox.**
-
-**The for attribute of the `<label>` tag should be equal to the id attribute of the `<input>` element to bind them together.**
-
-### The Submit Button :
-
-**`<input type="submit">` defines a button for submitting the form data to a form-handler.**
-
-**The form-handler is typically a page on the server with a script for processing input data.**
-
-**The form-handler is specified in the form's action attribute.**
-
-## The Action Attribute :
-
-**The `action` attribute defines the action to be performed when the form is submitted. Usually, the form data is sent to a page on the server when the user clicks on the submit button. In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:**
-
-```<form action="/action_page.php">```
-
-## The Target Attribute :
-
-**The `target` attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window The default value is `_self` which means the form will be submitted in the current window. To make the form result open in a new browser tab, use the value `_blank`.**
-
-## HTML Input Types :
-**Here are the different input types you can use in HTML:**
-```
-<input type="button">
-<input type="checkbox">
-<input type="color">
-<input type="date">
-<input type="datetime-local">
-<input type="email">
-<input type="file">
-<input type="hidden">
-<input type="image">
-<input type="month">
-<input type="number">
-<input type="password">
-<input type="radio">
-<input type="range">
-<input type="reset">
-<input type="search">
-<input type="submit">
-<input type="tel">
-<input type="text">
-<input type="time">
-<input type="url">
-<input type="week">
+fetch(url)
+.then(res => res.json())
+.then(json => {      
+this.setFetchResults(json.items)    
+}
 ```
 
-# JavaScript Events
+**You fetch some data, you parse to json, and then you pass that json into another function and do something with it. Fairly straightforward.**
+**Now, if this fetch request happens as part of a larger function, at the beginning of that function, JavaScript will essentially put it to the side, and wait for the response (let’s say in this case from an external API), and continue moving down the function.**
+**Eventually, hopefully, there is either a response from the external API (whether an error, or the data we’re expecting) or a set timeout. Then, this information is passed to the task queue.**
+**As the call stack is cleared, the Event Loop passes information from the task queue back to the call stack to finish executing the function.**
 
-**HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.**
 
-### HTML Events :
 
-**An HTML event can be something the browser does, or something a user does.**
+### JavaScript Function Scope
+**In JavaScript there are two types of scope:**
 
-**Here are some examples of HTML events:**
+- Local scope
+- Global scope
 
-- An HTML web page has finished loading
-- An HTML input field was changed
-- An HTML button was clicked
+**JavaScript has function scope: Each function creates a new scope.Scope determines the accessibility (visibility) of these variables.Variables defined inside a function are not accessible (visible) from outside the function.**
 
-**Often, when events happen, you may want to do something.**
+## Errors :
 
-**JavaScript lets you execute code when events are detected.**
+Runtime errors result in new Error objects being created and thrown.
 
-**HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.**
+**Error types :**
 
-**With single quotes:**
+**Besides the generic Error constructor, there are seven other core error constructors in JavaScript. For client-side exceptions, see Exception handling statements.**
 
-```<element event='some JavaScript'>```
+1. EvalError :
+Creates an instance representing an error that occurs regarding the global function `eval()`.
 
-**With double quotes:**
+2. InternalError : 
+Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion".
 
-```<element event="some JavaScript">```
+3. RangeError :
+Creates an instance representing an error that occurs when a numeric variable or parameter is outside of its valid range.
 
-**In the following example, an onclick attribute (with code), is added to a <button> element:**
+4. ReferenceError :
+Creates an instance representing an error that occurs when de-referencing an invalid reference.
+
+5. SyntaxError :
+Creates an instance representing a syntax error.
+
+6. TypeError :
+Creates an instance representing an error that occurs when a variable or parameter is not of a valid type.
+
+7. URIError :
+Creates an instance representing an error that occurs when `encodeURI()` or `decodeURI()` are passed invalid parameters.
+
+
+## JavaScript Debugging :
+
+### Code Debugging :
+**Programming code might contain syntax errors, or logical errors.**
+
+**Many of these errors are difficult to diagnose.**
+
+**Often, when programming code contains errors, nothing will happen. There are no error messages, and you will get no indications where to search for errors.**
+
+**Searching for (and fixing) errors in programming code is called code debugging.**
+
+## JavaScript Debuggers :
+**Debugging is not easy. But fortunately, all modern browsers have a built-in JavaScript debugger.**
+
+**Built-in debuggers can be turned on and off, forcing errors to be reported to the user.**
+
+**With a debugger, you can also set breakpoints (places where code execution can be stopped), and examine variables while the code is executing.**
+
+**Normally, otherwise follow the steps at the bottom of this page, you activate debugging in your browser with the F12 key, and select "Console" in the debugger menu.**
+
+
+### The console.log() Method :
+
+**If your browser supports debugging, you can use console.log() to display JavaScript values in the debugger window:**
 
 **Example :**
-`<button onclick="document.getElementById('demo').innerHTML = Date()">`The time is?`</button>`
-In the example above, the JavaScript code changes the content of the element with id="demo".
+```
+<!DOCTYPE html>
+<html>
+<body>
 
-In the next example, the code changes the content of its own element (using this.innerHTML):
+<h1>My First Web Page</h1>
 
-**Example :**
-`<button onclick="this.innerHTML = Date()">`The time is? `</button>`
-JavaScript code is often several lines long. It is more common to see event attributes calling functions:
+<script>
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+</script>
 
-**Example :**
-**`<button onclick="displayDate()">`The time is?`</button>`
+</body>
+</html>
+```
 
-### What can JavaScript Do?**
+### Major Browsers' Debugging Tools :
+**Normally, you activate debugging in your browser with F12, and select "Console" in the debugger menu.**
 
-**Event handlers can be used to handle, and verify, user input, user actions, and browser actions:**
+**Otherwise follow these steps:**
 
-- Things that should be done every time a page loads
-- Things that should be done when the page is closed
-- Action that should be performed when a user clicks a button
-- Content that should be verified when a user inputs data
-- And more ...
-
-**Many different methods can be used to let JavaScript work with events:**
-
-- HTML event attributes can execute JavaScript code directly
-- HTML event attributes can call JavaScript functions
-- You can assign your own event handler functions to HTML elements
-- You can prevent events from being sent or being handled
-- And more ...
-
-
-
-
+**- Chrome :**
+```
+Open the browser.
+From the menu, select "More tools".
+From tools, choose "Developer tools".
+Finally, select Console.
+```
+**- Safari**
+```
+Go to Safari, Preferences, Advanced in the main menu.
+Check "Enable Show Develop menu in menu bar".
+When the new option "Develop" appears in the menu:
+Choose "Show Error Console".
+```
