@@ -206,7 +206,8 @@ button:before {
   z-index: 2;
 }
 ```
-```
+```cd ..
+
 .timer span {
   position: absolute;
   z-index: 3;
