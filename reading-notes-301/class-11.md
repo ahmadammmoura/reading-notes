@@ -8,4 +8,4 @@
 
 ### OAuth is an open-standard authorization protocol or framework that describes how unrelated servers and services can safely allow authenticated access to their assets without actually sharing the initial, related, single logon credential. In authentication parlance, this is known as secure, third-party, user-agent, delegated authorization.
 
-![ss](https://lh3.googleusercontent.com/proxy/GeIjg2MjJo95EZz8oAlf-Fn14Hzk7yXxECv_emKmUzVECn6pVFHHnr2Wwk-n5O2uYUqls2tOo_WUZuUId9oZhUG4CQxehHgKum9SWBsEhOHrb0QPWuZPku-FK9H6KgBEBbOJqxxHFAMcJIMWSTcLcmYFCySMqfygW8kf-asfhxz3ANCM9Y7pjoHkog)
+![ss](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/authentication-vs-authorization-diff-a7acc34e88679381.png)
