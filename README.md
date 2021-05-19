@@ -54,7 +54,8 @@
 | class-11    | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-11)    |
 | class-12    | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-12)    |
 | class-13    | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-13)    |
-| class-14    | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-14)    |
+| class-14a   | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-14a)   |
+| class-14b   | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-14b)   |
 | class-15    | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-301/class-15)    |
 
 
