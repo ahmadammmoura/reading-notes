@@ -2,16 +2,13 @@
 
 ![dd](https://engineering.stanford.edu/sites/default/files/styles/banner-850x400/public/diversity_in_tech_v2_web.jpg?itok=WzaEcAnp)
 
-
-
 # What Happened To Women In Computer Science?
-
 
 ## What occured during the same time as the beginning of the decline of women in computer sciene?
 
 ### The share of women in computer science started falling at roughly the same moment when personal computers started showing up in U.S. homes in significant numbers.
-### These early personal computers weren't much more than toys. You could play pong or simple shooting games, maybe do some word processing. And these toys were marketed almost entirely to men and boys.
 
+### These early personal computers weren't much more than toys. You could play pong or simple shooting games, maybe do some word processing. And these toys were marketed almost entirely to men and boys.
 
 ## Why does it matter that males had been playing on computers growing up?
 
@@ -22,5 +19,3 @@
 ## Things I want to know more about
 
 #### work in tech in us
-
-
