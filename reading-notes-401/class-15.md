@@ -127,3 +127,13 @@ myEmitter.emit('order')
 
   * FIFO Queue = > The operations of a queue make it a first-in-first-out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed. ... A queue is an example of a linear data structure, or more abstractly a sequential collection.
   * Pub/Sub = > Pub/Sub enables you to create systems of event producers and consumers, called publishers and subscribers. Publishers communicate with subscribers asynchronously by broadcasting events, rather than by synchronous remote procedure calls (RPCs).
+
+
+### Preparation Materials
+
+#### What is AWS SNS used for?
+###### Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP).
+
+#### What is AWS SQS used for
+
+###### Amazon SQS is a message queue service used by distributed applications to exchange messages through a polling model, and can be used to decouple sending and receiving components.
