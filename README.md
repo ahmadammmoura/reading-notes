@@ -75,3 +75,4 @@
 | class-14 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-14) |
 | class-15 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-15) |
 | class-16 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-16) |
+| class-17 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-17) |
