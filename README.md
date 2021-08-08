@@ -79,3 +79,4 @@
 | class-18 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-18) |
 | class-19 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-19) |
 | class-20 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-20) |
+| class-26 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-26) |
