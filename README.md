@@ -81,3 +81,4 @@
 | class-20 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-20) |
 | class-26 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-26) |
 | class-27 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-27) |
+| class-28 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-28) |
