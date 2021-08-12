@@ -4,23 +4,20 @@
 
 ## What Are They?
 
-Hash tables are data structure that stores key/value pairs indexed by a hash. It's useful because it provides us with fast and efficient lookups and additions: `O(1)`.
-
-They are useful for storing information
+A hash table is a special collection that is used to store key-value items. So instead of storing just one value like the stack, array list and queue, the hash table stores 2 values. These 2 values form an element of the hash table. Below are some example of how values of a hash table might look like.
 
 ## Vocab
 
-`Hash` – The result of a hashing algorithm, which takes an incoming key as a value. The algorithm then hashes it for security purposes or otherwise, and then used as the index for the table.
+`Hash` – Hashing is the transformation of a string of characters into a usually shorter fixed-length value or key that represents the original string. 
 
-`Buckets` – 'Bucket' is the word used to refer to the content stored at an index.
+`Buckets` – Hash buckets are used to apportion data items for sorting or lookup purposes..
 
-`Collision` – This is an event that occurs more than one key gets put in the same index
+`Collision` In computer science, a collision or clash is a situation that occurs when two distinct pieces of data have the same hash value, checksum, fingerprint, or cryptographic digest
 
-`Associative array`: An array that makes a key to a value.
 
 ## How Do They Work
 
-By storing values at a specific index (a hashed key), we can utilize an array's O(1) read access. Instead of iterating through a list at O(n), we're able to quickly access the exact thing we need.
+ hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored.
 
 ## Implementation
 
@@ -32,12 +29,9 @@ By using a linked list in each bucket, we can prevent collisions. Instead of mer
 
 ## Methods
 
-`find()`: Gets a hash from a given key and checks that it exists in the table. If it does, the algorithm with try to find the value associated with that key in the linked list.
+`get(Object key)`: Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
 
-`contains()`: Returns boolean true/false if a given key appears in the table.
+`contains(Object value)`: Tests if some key maps into the specified value in this hashtable.
 
-`getHash()`: Takes a key, hashes it, and returns the index of that hashed key in the table
+`hashCode())`: Returns the hash code value for this Map as per the definition in the Map interface.
 
-## Resources
-
-[Intro to Hash Tables](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-30/resources/Hashtables.html)
