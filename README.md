@@ -89,3 +89,4 @@
 | class-33 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-33) |
 | class-34 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-34) |
 | class-35 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-35) |
+| class-36 | [link](https://ahmadammmoura.github.io/reading-notes/reading-notes-401/class-36) |
